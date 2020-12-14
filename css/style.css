@@ -21,3 +21,62 @@ main {
     justify-content: center;
     height: 100vh;
 }
+.profile-card {
+    box-shadow: 0 0 1.875rem;
+    width: 350px;
+    height: 400px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 200px 100px 100px;
+    grid-template-areas:    "head"
+                            "body"
+                            "foot";
+}
+.profile-card > .cardheader {
+    grid-area: head;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.profilepicture{
+    text-align: center;
+    padding-top: 90px;
+}
+.profilepicture img{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.card-body{
+    grid-area: body;
+    text-align: center;
+}
+.card-body .identity{
+    margin-bottom: 15px;
+}
+.card-body .identity, .card-body .town{
+    font-size: 18px;
+    font-weight: 400;
+}
+.card-body .identity span{
+    font-weight: 700;
+}
+.card-footer {
+    grid-area: foot;
+    border-top: 1px solid hsla(0, 2%, 69%, 0.3);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.card-footer .box h3{
+    margin: 10px;
+}
+
+@media only screen and (max-width: 375px){
+    main{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
