@@ -22,7 +22,7 @@ main {
     height: 100vh;
 }
 .profile-card {
-    box-shadow: 0 0 1.875rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 350px;
     height: 400px;
     background-color: aliceblue;
@@ -58,9 +58,11 @@ main {
 .card-body .identity, .card-body .town{
     font-size: 18px;
     font-weight: 400;
+    color: hsla(0, 1%, 33%, 0.89);
 }
 .card-body .identity span{
     font-weight: 700;
+    color: black;
 }
 .card-footer {
     grid-area: foot;
@@ -72,6 +74,10 @@ main {
 }
 .card-footer .box h3{
     margin: 10px;
+}
+.card-footer .box p{
+    color: hsla(0, 1%, 33%, 0.89);
+    font-size: 0.6875rem;
 }
 
 @media only screen and (max-width: 375px){
